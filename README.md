@@ -7,18 +7,18 @@ For statistical results you can directly check the live website https://brownie-
 
 The directory is a ***Web Application*** for hosting on *Heroku* servers. The description of files and folders can be found below:
 
-  1. [Analysis]() - Folder containing Python Code to do analytical study on entire data with results.
-  2. [Brownie-Analytics]() - Folder having Code to Node-Js Web-App for Stats.
-  3. [Clean_Data]() - Contains the cleaned data in CSV format.
-  4. [Models]() - Folder containing all tried ML models and the final saved model.
+  1. [Analysis](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Analysis) - Folder containing Python Code to do analytical study on entire data with results.
+  2. [Brownie-Analytics](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Brownie-Analytics) - Folder having Code to Node-Js Web-App for Stats.
+  3. [Clean_Data](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Clean_Data) - Contains the cleaned data in CSV format.
+  4. [Models](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Models) - Folder containing all tried ML models and the final saved model.
   5. [MongoDB](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/MongoDB) - Folder containing Python code to upload data to MongoDB and MongoDB instance.
-  6. [Other_Jupyter_Notebooks]() - Folder containing other Jupyter Notebooks to clean & merge data and a prediction tester tool. 
+  6. [Other_Jupyter_Notebooks](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Other_Jupyter_Notebooks) - Folder containing other Jupyter Notebooks to clean & merge data and a prediction tester tool. 
   7. [Prediction_API](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Prediction_API) - Folder having Flask Web-App for predicting Reddit Flairs.
   8. [Raw_Data](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Raw_Data) - Folder containing all flair data files fetched from Reddit API.
   
 ### Codebase
 
-The entire code has been developed using Python programming language, utilizing it's powerful text processing and machine learning modules. The application has been developed using Django web framework and hosted on Heroku web server.
+The code has been developed using Python and JavaScript programming languages. Utilizing Python's powerful text processing and machine learning modules certian ML and Deep Learning Models are made. The [Flair Prediction Web-application](https://flair-api-json.herokuapp.com/) has been developed using Flask web framework and the [Statistical Analysis Web-application](https://brownie-analytics.herokuapp.com/) has been made using NodeJs. Both of them are hosted on Heroku Servers.
 
 ### Project Execution
 
