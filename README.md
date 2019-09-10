@@ -66,15 +66,18 @@ The approach taken for the task is as follows:
    9. Training and Testing on the dataset showed the **Random Forest** showed the best testing accuracy of **69.6%** when trained on the combination of **Title + Comments + Url** feature.
    10. The best model is saved and is used for [prediction of the flair from the URL of the post](https://flair-api-json.herokuapp.com/).
       
-### Approach (for Flair Detection)
+### Approach (for Statistical Analysis)
 
 Available statsitical information is visualized using Four types of Graphs:
   
-  1.[Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html):
-  2.a)[Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html):
-    b)[Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html):
-  3.[Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html):
-  4.[Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html):
+  
+    1.[Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html):
+    2.
+  
+      a)[Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html):
+      b)[Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html):
+    3.[Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html):
+    4.[Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html):
     
 ### Results
 
