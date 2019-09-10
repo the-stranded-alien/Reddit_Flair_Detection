@@ -70,12 +70,12 @@ The approach taken for the task is as follows:
 
 Available statsitical information is visualized using Four types of Graphs:
   
-  1.[Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html):
-  2.
-   a)[Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html):
-   b)[Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html):
-  3.[Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html):
-  4.[Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html):
+   1. [Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html) Helps to analyze the data we are going to use for training. Each flair should have comparable number of posts.
+   2. Number of Comments for each flair, helps us to see how are people commenting and reacting to specific flairs and what are the categories people are more interested in this subreddit.
+     a) [Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html) 
+     b) [Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html)
+   3. [Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html) Presents which flairs are posted more (or less) at different time section of days. Can be used to derive some useful trends.
+   4. [Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html) Helps analyze how people are rating posts of different flairs and can be used to assess the content quality of posts from different flairs.
     
 ### Results
 
