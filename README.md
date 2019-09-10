@@ -44,32 +44,25 @@ These are the entire prpject's dependencies :
   8. [NodeJs](https://nodejs.org/en/)
   9. [ExpressJs](https://expressjs.com/)
   
-### Approach
+### Approach (for Flair Detection)
 
-Going through various literatures available for text processing and suitable machine learning algorithms for text classification, I based my approach using [[2]](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568) which described various machine learning models like Naive-Bayes, Linear SVM and Logistic Regression for text classification with code snippets. Along with this, I tried other models like Random Forest and Multi-Layer Perceptron for the task. I have obtained test accuracies on various scenarios which can be found in the next section.
+After reading blogs and books about text classification, I concluded that in general cases Naive Bayes Classifier, Random Forests and Recurrent Neural Networks perform better for text classification compared to other models.
 
 The approach taken for the task is as follows:
 
-  1. Collect 100 India subreddit data for each of the 12 flairs using `praw` module [[1]](http://www.storybench.org/how-to-scrape-reddit-with-python/).
-  2. The data includes *title, comments, body, url, author, score, id, time-created* and *number of comments*.
+  1. Collected around 200 India subreddit data for each of the 12 flairs using `praw` module [[1]](http://www.storybench.org/how-to-scrape-reddit-with-python/).
+  2. The data had *title*, *score*, *id*, *url*, *comms_num*, *body*, *author*, *comments*, *flair*, and *time-created*.
   3. For **comments**, only top level comments are considered in dataset and no sub-comments are present.
-  4. The ***title, comments*** and ***body*** are cleaned by removing bad symbols and stopwords using `nltk`.
-  5. Five types of features are considered for the the given task:
-    
-    a) Title
-    b) Comments
-    c) Urls
-    d) Body
-    e) Combining Title, Comments and Urls as one feature.
-  6. The dataset is split into **70% train** and **30% test** data using `train-test-split` of `scikit-learn`.
-  7. The dataset is then converted into a `Vector` and `TF-IDF` form.
-  8. Then, the following ML algorithms (using `scikit-learn` libraries) are applied on the dataset:
+  4. The ***title***, ***comments*** and ***url*** are cleaned by removing bad symbols and stopwords using `nltk`.
+  5. Feature considered for the the given task:
+    -> Combining Title, Comments and Urls as one feature.
+  6. The dataset is split into **70% train** and **30% test** data for Naive-Bayes and Random Forest and **90% train** and **10% test** data for RNN based model using `train-test-split` of `scikit-learn`.
+  7. The dataset is then converted into a `Vector` and `TF-IDF` form for Naive-Bayes and Random Forest and into `tokens` form for RNN(LSTM).
+  8. Then, the following ML algorithms (using `scikit-learn` libraries and `Keras`) are applied on the dataset:
     
     a) Naive-Bayes
-    b) Linear Support Vector Machine
-    c) Logistic Regression
-    d) Random Forest
-    e) MLP
+    b) Random Forest
+    c) RNN (LSTM)
    9. Training and Testing on the dataset showed the **Random Forest** showed the best testing accuracy of **69.6%** when trained on the combination of **Title + Comments + Url** feature.
    10. The best model is saved and is used for prediction of the flair from the URL of the post.
     
@@ -93,3 +86,4 @@ Title, Comments and URL all had meaningful text data related to posts which was 
 1. [How to scrape data from Reddit](http://www.storybench.org/how-to-scrape-reddit-with-python/)
 2. [Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
 3. [Multi-Class Text Classification With LSTM](https://towardsdatascience.com/multi-class-text-classification-with-lstm-1590bee1bd17)
+4. [Yash Srivastava's Project on Reddit Flair Prediction](https://github.com/radonys/Reddit-Flair-Detector) 
