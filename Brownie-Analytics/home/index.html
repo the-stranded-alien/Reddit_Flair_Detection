@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brownie Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-warning bg-dark">
+        <a class="navbar-brand" href="#"> Statistical Analysis !! </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent ">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Stats
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../analytics/stat1.html"> Flairs vs Posts </a>
+                        <a class="dropdown-item" href="../analytics/stat2.html"> Flairs vs Total Comments </a>
+                        <a class="dropdown-item" href="../analytics/stat2.1.html"> Flairs vs Average Comments </a>
+                        <a class="dropdown-item" href="../analytics/stat3.html"> Flairs vs Time of Day </a>
+                        <a class="dropdown-item" href="../analytics/stat4.html"> Flairs vs Scores </a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://flair-api-json.herokuapp.com/"> Predict Flairs </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card-deck">
+                <div class="card border-primary text-white bg-primary">
+                    <img src="/Images/post.jpg" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Flairs vs Number Of Posts </h5>
+                        <p class="card-text"> Number of Posts Collected  for each Flair Category </p>
+                        <a href="../analytics/stat1.html" class="btn btn-light"> Show </a>
+                    </div>
+                </div>
+                <div class="card border-warning text-white bg-warning">
+                    <img src="/Images/Comments.png" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Flairs vs Comments </h5>
+                        <p class="card-text"> Number of Comments each Flair Category got </p>
+                        <a href="../analytics/stat2.html" class="btn btn-light"> Total </a>
+                        <a href="../analytics/stat2.1.html" class="btn btn-light"> Average </a>
+                    </div>
+                </div>
+                <div class="card border-danger text-white bg-danger">
+                    <img src="/Images/TimeDay.jpg" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Flairs vs Time of Day </h5>
+                        <p class="card-text"> Distribution of Flaired Posts during the Time of Day </p>
+                        <a href="../analytics/stat3.html" class="btn btn-light"> Show </a>
+                    </div>
+                </div>
+                <div class="card border-dark text-white bg-dark">
+                    <img src="/Images/Score.png" class="card-img-top" width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title"> Flairs vs Score </h5>
+                        <p class="card-text"> Average Scores with respect to Flair category </p>
+                        <a href="../analytics/stat4.html" class="btn btn-light"> Show </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

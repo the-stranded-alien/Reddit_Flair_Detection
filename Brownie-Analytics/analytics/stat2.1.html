@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> Flair vs Comments </title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="../" class="btn btn-dark"> BACK </a>
+        <canvas id="mychart"></canvas>
+    </div>
+    <script>
+        let myChart = document.getElementById('mychart').getContext('2d');
+
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let barChart = new Chart(myChart, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["Political", "Non-Political", "Reddiquette", "Ask India", "Science & Technology", "Policy & Economy", "Finance & Business", "Sports", "Food", "Photography", "AMA", "Entertainment"],
+                datasets: [
+                    {
+                        label: 'Average Comments',
+                        data: [49,18,69,38,31,35,29,46,53,26,89,24],
+                        backgroundColor: ['red', 'blue', 'green', 'yellow', 'purple', 'pink', 'cyan', 'orange', 'brown', 'grey', 'black', 'lightgreen'],
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        barPercentage: 1.0
+                    }],
+                    yAxes: [{
+                        barPercentage: 1.0
+                    }]
+                },
+                title: {
+                    display: true,
+                    text: 'Flair vs Average Number of Comments',
+                    fontSize: 20
+                },
+                legend: {
+                    display: false,
+                    position: 'right',
+                    label: {
+                        fontColor: 'black'
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 50,
+                        top: 0,
+                        bottom: 0
+                    }
+                },
+                tooltips: {
+                    // enabled: false
+                },
+
+            }
+        });
+    </script>
+</body>
+</html>

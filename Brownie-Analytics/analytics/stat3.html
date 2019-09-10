@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> Flairs vs Time of Day </title>
+</head>
+
+<body>
+    <div class="container" id="time">
+        <a href="../" class="btn btn-dark"> BACK </a>
+        <canvas id="mychart"></canvas>
+    </div>
+    <script>
+        let myChart = document.getElementById('mychart').getContext('2d');
+
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let barChart = new Chart(myChart, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["[ 00:00 - 05:59 ]", "[ 06:00 - 11:59 ]", "[ 12:00 - 17:59 ]", "[ 18:00 - 23:59 ]"],
+                datasets: [
+                    {
+                        label: 'Political',
+                        data: [32, 52, 99, 65],
+                        backgroundColor: 'red',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Non-Political',
+                        data: [59, 29, 82, 48],
+                        backgroundColor: 'blue',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Reddiquette',
+                        data: [18, 22, 34, 26],
+                        backgroundColor: 'green',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Ask India',
+                        data: [46, 21, 75, 82],
+                        backgroundColor: 'yellow',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Science/Technology',
+                        data: [45, 32, 78, 68],
+                        backgroundColor: 'purple',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Policy/Economy',
+                        data: [35, 30, 102, 55],
+                        backgroundColor: 'pink',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Business/Finance',
+                        data: [23, 37, 91, 62],
+                        backgroundColor: 'cyan',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Sports',
+                        data: [30, 29, 88, 87],
+                        backgroundColor: 'orange',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Food',
+                        data: [37, 30, 90, 86],
+                        backgroundColor: 'brown',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Photography',
+                        data: [58, 23, 74, 65],
+                        backgroundColor: 'grey',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'AMA',
+                        data: [37, 16, 65, 93],
+                        backgroundColor: 'black',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    },
+                    {
+                        label: 'Entertainment',
+                        data: [49, 15, 73, 83],
+                        backgroundColor: 'lightgreen',
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: '#000'
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        barPercentage: 1.0
+                    }],
+                    yAxes: [{
+                        barPercentage: 1.0,
+                        ticks: {
+                            display: true,
+                            suggestedMin: 0
+                        }
+                    }]
+                },
+                title: {
+                    display: true,
+                    text: 'Flairs vs Number of Posts in Time of Day',
+                    fontSize: 25
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        fontColor: 'black'
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 50,
+                        top: 0,
+                        bottom: 0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

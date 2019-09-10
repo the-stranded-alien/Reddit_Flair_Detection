@@ -1,0 +1,40 @@
+.wrapper {
+    display: grid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    text-align: center;
+    text-decoration-style: dashed; 
+    grid-gap: 10px;
+    border: 2px blue solid;
+}
+
+.two {
+    text-align: center;
+    grid-gap: 10px;
+    border: 2px red solid;
+}
+
+.three {
+    text-align: center;
+    grid-gap: 10px;
+    border: 2px green solid;
+}
+
+.four {
+    text-align: center;
+    grid-gap: 10px;
+    border: 2px brown solid;
+}
+
+.five {
+    grid-gap: 10px;
+    border: 1px purple solid;
+}
