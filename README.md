@@ -23,14 +23,12 @@ The code has been developed using Python and JavaScript programming languages. U
 ### Project Execution
 
   1. Open the `Terminal`.
-  2. Clone the repository by entering `git clone https://github.com/radonys/Reddit-Flair-Detector.git`.
-  3. Ensure that `Python3` and `pip` is installed on the system.
-  4. Create a `virtualenv` by executing the following command: `virtualenv -p python3 env`.
-  5. Activate the `env` virtual environment by executing the follwing command: `source env/bin/activate`.
-  6. Enter the cloned repository directory and execute `pip install -r requirements.txt`.
-  7. Enter `python` shell and `import nltk`. Execute `nltk.download('stopwords')` and exit the shell.
-  8. Now, execute the following command: `python manage.py runserver` and it will point to the `localhost` with the port.
-  9. Hit the `IP Address` on a web browser and use the application.
+  2. Clone the repository by entering `git clone https://github.com/the-stranded-alien/Reddit_Flair_Detection`.
+  3. Ensure that `Python3`, `pip` and `npm` is installed on the system.
+  4. Set terminal to Prediction-API folder and type `python app.py` to run on localhost port 5000.
+  5. Set terminal to Brownie-Analytics folder and type `npm init` and keep pressing `Enter` untill project is initialized.
+  6. Type `npm install` to install all dependencies. 
+  7. Run `server.js` file to run Stats website on localhost port 1611.
   
 ### Dependencies
 
@@ -72,67 +70,26 @@ The approach taken for the task is as follows:
     c) Logistic Regression
     d) Random Forest
     e) MLP
-   9. Training and Testing on the dataset showed the **Random Forest** showed the best testing accuracy of **77.97%** when trained on the combination of **Title + Comments + Url** feature.
+   9. Training and Testing on the dataset showed the **Random Forest** showed the best testing accuracy of **69.6%** when trained on the combination of **Title + Comments + Url** feature.
    10. The best model is saved and is used for prediction of the flair from the URL of the post.
     
 ### Results
-
-#### Title as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.6011904762      |
-| Linear SVM                 | 0.6220238095      |
-| Logistic Regression        | **0.6339285714**  |
-| Random Forest              | 0.6160714286      |
-| MLP                        | 0.4970238095      |
-
-#### Body as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.2083333333      |
-| Linear SVM                 | 0.2470238095      |
-| Logistic Regression        | 0.2619047619      |
-| Random Forest              | **0.2767857143**  |
-| MLP                        | 0.2113095238      |
-
-#### URL as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.3005952381      |
-| Linear SVM                 | **0.3898809524**  |
-| Logistic Regression        | 0.3690476190      |
-| Random Forest              | 0.3005952381      |
-| MLP                        | 0.3214285714      |
-
-#### Comments as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.5357142857      |
-| Linear SVM                 | 0.6190476190      |
-| Logistic Regression        | **0.6220238095**  |
-| Random Forest              | 0.6011904762      |
-| MLP                        | 0.4761904762      |
 
 #### Title + Comments + URL as Feature
 
 | Machine Learning Algorithm | Test Accuracy     |
 | -------------              |:-----------------:|
-| Naive Bayes                | 0.6190476190      |
-| Linear SVM                 | 0.7529761905      |
-| Logistic Regression        | 0.7470238095      |
-| Random Forest              | **0.7797619048**  |
-| MLP                        | 0.4940476190      |
+| Naive Bayes                | 0.55109962      |
+| Random Forest              | **0.69598965**  |
+| RNN(LSTM)                  | 0.42248062      |
 
 
 ### Intuition behind Combined Feature
 
-The features independently showed a test accuracy near to **60%** with the `body` feature giving the worst accuracies during the experiments. Hence, it was excluded in the combined feature set.
+Title, Comments and URL all had meaningful text data related to posts which was useful to predict the post's flair. Body was not taken as a feature because half of the posts didn't had a body and it was making the feature unbalanced.
 
 ### References
 
 1. [How to scrape data from Reddit](http://www.storybench.org/how-to-scrape-reddit-with-python/)
 2. [Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
+3. [Multi-Class Text Classification With LSTM](https://towardsdatascience.com/multi-class-text-classification-with-lstm-1590bee1bd17)
