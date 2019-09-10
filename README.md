@@ -12,9 +12,9 @@ The directory is a ***Web Application*** for hosting on *Heroku* servers. The de
   3. [Clean_Data]() - Contains the cleaned data in CSV format.
   4. [Models]() - Folder containing all tried ML models and the final saved model.
   5. [MongoDB](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/MongoDB) - Folder containing Python code to upload data to MongoDB and MongoDB instance.
-  6. [Prediction_API](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Prediction_API) - Folder having Flask Web-App for predicting Reddit Flairs.
-  7. [Raw_Data](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Raw_Data) - Folder containing all flair data files fetched from Reddit API.
-  8. [Other_Jupyter_Notebooks]() - Folder containing other Jupyter Notebooks to clean & merge data and a prediction tester tool.
+  6. [Other_Jupyter_Notebooks]() - Folder containing other Jupyter Notebooks to clean & merge data and a prediction tester tool. 
+  7. [Prediction_API](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Prediction_API) - Folder having Flask Web-App for predicting Reddit Flairs.
+  8. [Raw_Data](https://github.com/the-stranded-alien/Reddit_Flair_Detection/tree/master/Raw_Data) - Folder containing all flair data files fetched from Reddit API.
   
 ### Codebase
 
