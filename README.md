@@ -34,15 +34,17 @@ The code has been developed using Python and JavaScript programming languages. U
   
 ### Dependencies
 
-The following dependencies can be found in [requirements.txt](https://github.com/radonys/Reddit-Flair-Detector/blob/master/requirements.txt):
+These are the entire prpject's dependencies :
 
   1. [praw](https://praw.readthedocs.io/en/latest/)
   2. [scikit-learn](https://scikit-learn.org/)
   3. [nltk](https://www.nltk.org/)
-  4. [Django](https://www.djangoproject.com/)
-  5. [bs4](https://pypi.org/project/bs4/)
-  6. [pandas](https://pandas.pydata.org/)
-  7. [numpy](http://www.numpy.org/)
+  4. [Flask](https://palletsprojects.com/p/flask/)
+  5. [pandas](https://pandas.pydata.org/)
+  6. [numpy](http://www.numpy.org/)
+  7. [Keras](https://keras.io/)
+  8. [NodeJs](https://nodejs.org/en/)
+  9. [ExpressJs](https://expressjs.com/)
   
 ### Approach
 
