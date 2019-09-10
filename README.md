@@ -70,14 +70,12 @@ The approach taken for the task is as follows:
 
 Available statsitical information is visualized using Four types of Graphs:
   
-  
-    1.[Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html):
-    2.
-  
-      a)[Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html):
-      b)[Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html):
-    3.[Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html):
-    4.[Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html):
+  1.[Number of Posts collected for each flair](https://brownie-analytics.herokuapp.com/analytics/stat1.html):
+  2.
+   a)[Total Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.html):
+   b)[Average Number of Comments for each flair](https://brownie-analytics.herokuapp.com/analytics/stat2.1.html):
+  3.[Number of Posts of each flair in different Times of Day](https://brownie-analytics.herokuapp.com/analytics/stat3.html):
+  4.[Average Score for each flair](https://brownie-analytics.herokuapp.com/analytics/stat4.html):
     
 ### Results
 
